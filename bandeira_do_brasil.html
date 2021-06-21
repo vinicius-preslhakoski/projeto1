@@ -1,0 +1,85 @@
+<!-- bandeira-brasil.html -->
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle='green';
+    pincel.fillRect(0, 0, 600, 400);
+
+    pincel.fillStyle='yellow';
+    pincel.beginPath();
+    pincel.moveTo(300, 50);
+    pincel.lineTo(50, 200);
+    pincel.lineTo(550, 200);
+    pincel.fill();
+
+    pincel.beginPath();
+    pincel.moveTo(300, 350);
+    pincel.lineTo(50, 200);
+    pincel.lineTo(550, 200);
+    pincel.fill();
+
+    pincel.fillStyle='darkblue';
+    pincel.beginPath();
+
+    pincel.arc(300, 200, 100, 0, 2*3.14);
+    pincel.fill()
+
+    
+
+    pincel.fillStyle='white'
+    pincel.fillRect(200, 187, 200, 25);
+
+    pincel.fillStyle='black';
+    pincel.font='16px Arial';
+    pincel.fillText("ORDEM E PROGRESSO", 210, 205);
+
+ //função para desenha estrela
+function desenhaEstrela(x, y){
+pincel.beginPath();
+pincel.fillStyle = 'white';
+pincel.moveTo(x, y-5);
+pincel.lineTo(x-1, y-1);
+pincel.lineTo(x-5, y-1);
+pincel.lineTo(x-2, y+1);
+pincel.lineTo(x-3, y+5);
+pincel.lineTo(x, y+3);
+pincel.lineTo(x+3, y+5);
+pincel.lineTo(x+2, y+1);
+pincel.lineTo(x+5, y-1);
+pincel.lineTo(x+1, y-1);
+pincel.fill();
+}
+//chamo uma função para desenha estrela na posição x=340 e y=170
+desenhaEstrela(340, 220);
+desenhaEstrela(220, 225);
+desenhaEstrela(300, 290);
+desenhaEstrela(270, 280);
+desenhaEstrela(255, 270);
+desenhaEstrela(227, 252);
+desenhaEstrela(320, 160);
+desenhaEstrela(370, 260);
+desenhaEstrela(375, 245);
+desenhaEstrela(365, 240);
+desenhaEstrela(355, 260);
+desenhaEstrela(355, 275);
+desenhaEstrela(345, 275);
+desenhaEstrela(345, 255);
+desenhaEstrela(250, 233);
+desenhaEstrela(280, 240);
+desenhaEstrela(280, 255);
+desenhaEstrela(295, 260);
+desenhaEstrela(300, 250);
+desenhaEstrela(240, 240);
+desenhaEstrela(260, 245);
+desenhaEstrela(270, 220);
+desenhaEstrela(320, 260);
+desenhaEstrela(320, 240);
+desenhaEstrela(340, 240);
+desenhaEstrela(220, 240);
+desenhaEstrela(240, 260);
+</script>
